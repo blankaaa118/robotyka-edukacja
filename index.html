@@ -20,7 +20,11 @@
         th { background: #FFB6C1; color: #FFFFFF; }
         .obrazek { display: inline-block; width: 48%; margin: 1%; text-align: center; }
         .obrazek img { width: 100%; height: auto; border-radius: 10px; }
+        .video-link { display: inline-block; margin: 10px 10px 10px 0; padding: 10px 20px; background: #FFB6C1; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+        .video-link:hover { background: #FF99B3; }
         footer { background: #D3D3D3; text-align: center; padding: 15px; margin-top: 40px; }
+        ul { margin: 10px 0; padding-left: 20px; }
+        li { margin: 8px 0; }
     </style>
 </head>
 <body>
@@ -30,8 +34,11 @@
             <ul>
                 <li><a href="#wstep">Wstęp</a></li>
                 <li><a href="#czym-jest">Czym jest?</a></li>
+                <li><a href="#zastosowania">Zastosowania</a></li>
                 <li><a href="#tabela">Zalety vs Wyzwania</a></li>
+                <li><a href="#materialy">Materiały</a></li>
                 <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#podsumowanie">Podsumowanie</a></li>
             </ul>
         </nav>
     </header>
@@ -39,14 +46,27 @@
     <main>
         <section id="wstep">
             <h2>Wstęp</h2>
-            <p>Robotyka edukacyjna to nowoczesny sposób nauczania programowania, logiki i pracy zespołowej poprzez budowanie i programowanie robotów. Stosowana w szkołach od przedszkolaka po liceum.</p>
+            <p>Robotyka edukacyjna to nowoczesny sposób nauczania programowania, logiki i pracy zespołowej poprzez budowanie i programowanie robotów. Jest stosowana w szkołach od przedszkolaka po liceum, a nawet na studiach technicznych. Dzięki połączeniu zabawy z nauką, uczniowie rozwijają kompetencje przyszłości w sposób naturalny i angażujący.</p>
         </section>
 
         <section id="czym-jest">
             <h2>Czym jest robotyka edukacyjna?</h2>
-            <p>To zajęcia, gdzie uczniowie konstruują roboty z klocków (np. LEGO Mindstorms, mBot) i programują je w Scratchu lub Pythonie. Pomaga rozwijać umiejętności STEM (nauka, technologia, inżynieria, matematyka).</p>
-            <!-- Tutaj jest Twój plik 11.jpeg -->
-            <img src="11.jpeg" alt="Dzieci budują robota LEGO Mindstorms">
+            <p>To interdyscyplinarna metoda nauczania, która łączy elementy informatyki, matematyki, fizyki i inżynierii. Uczniowie konstruują roboty z klocków (np. LEGO Mindstorms EV3, LEGO Spike Prime, mBot) i programują je za pomocą intuicyjnych języków wizualnych (Scratch, Blockly) lub tekstowych (Python, C++).</p>
+            <p>Robotyka edukacyjna pomaga rozwijać kompetencje STEM (nauka, technologia, inżynieria, matematyka) oraz umiejętności XXI wieku: kreatywność, krytyczne myślenie, komunikację i współpracę. Uczniowie uczą się rozwiązywania problemów metodą prób i błędów, co przygotowuje ich do realnych wyzwań zawodowych.</p>
+            <img src="11.jpeg" alt="Dzieci budują robota LEGO Mindstorms na lekcji w szkolnej pracowni informatycznej">
+        </section>
+
+        <section id="zastosowania">
+            <h2>Popularne zestawy i technologie</h2>
+            <ul>
+                <li><strong>LEGO Mindstorms EV3</strong> – zaawansowany zestaw z silnikami, czujnikami i mikrokomputerem; idealny dla uczniów szkół podstawowych i średnich</li>
+                <li><strong>LEGO Spike Prime</strong> – nowsza wersja z kolorowymi blokami i prostszym interfejsem programistycznym</li>
+                <li><strong>mBot</strong> – tani robot na kółkach marki Makeblock, programowalny w Scratch lub Arduino IDE</li>
+                <li><strong>Ozobot</strong> – mikro-robot śledujący linie i kody kolorów; świetny dla najmłodszych dzieci (4-8 lat)</li>
+                <li><strong>Arduino</strong> – platforma open-source do budowy własnych robotów od podstaw (dla starszych uczniów)</li>
+                <li><strong>Raspberry Pi</strong> – miniaturowy komputer używany w zaawansowanych projektach robotycznych</li>
+            </ul>
+            <p>Każdy z tych zestawów można wykorzystać w różnych scenariuszach: od prostych zadań typu "jedź do przodu" po skomplikowane projekty jak roboty autonomiczne, sortujące przedmioty czy grające w piłkę.</p>
         </section>
 
         <section id="tabela">
@@ -61,37 +81,59 @@
                 <tbody>
                     <tr>
                         <td>Rozwija kreatywność i logiczne myślenie</td>
-                        <td>Wysoki koszt zestawów (od 500 zł)</td>
+                        <td>Wysoki koszt zestawów (od 500 do 2000 zł)</td>
                     </tr>
                     <tr>
                         <td>Uczy pracy w zespole i rozwiązywania problemów</td>
-                        <td>Potrzeba specjalistycznego sprzętu i prądu</td>
+                        <td>Potrzeba specjalistycznego sprzętu, komputerów i prądu</td>
                     </tr>
                     <tr>
-                        <td>Zwiększa zainteresowanie STEM</td>
-                        <td>Nauczyciele wymagają szkolenia</td>
+                        <td>Zwiększa zainteresowanie STEM i przyszłością zawodową w IT</td>
+                        <td>Nauczyciele wymagają dodatkowego szkolenia technicznego</td>
+                    </tr>
+                    <tr>
+                        <td>Integruje zabawę z nauką (wysoka motywacja uczniów)</td>
+                        <td>Ograniczony czas na lekcjach (standardowo 45 minut)</td>
+                    </tr>
+                    <tr>
+                        <td>Przygotowuje do zawodów przyszłości (programista, inżynier)</td>
+                        <td>Konieczność regularnych aktualizacji oprogramowania</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
+        <section id="materialy">
+            <h2>Materiały edukacyjne</h2>
+            <p>Jeśli chcesz dowiedzieć się więcej o robotyce edukacyjnej, polecamy te zasoby:</p>
+            <a href="https://www.youtube.com/results?search_query=LEGO+Mindstorms+tutorial" target="_blank" class="video-link">📹 Tutoriale LEGO Mindstorms</a>
+            <a href="https://www.youtube.com/results?search_query=robotyka+edukacyjna+dla+dzieci" target="_blank" class="video-link">📹 Robotyka dla dzieci</a>
+            <a href="https://scratch.mit.edu/" target="_blank" class="video-link">🖥️ Scratch - programowanie wizualne</a>
+            <a href="https://www.instructables.com/circuits/robots/" target="_blank" class="video-link">🔧 Projekty DIY</a>
+        </section>
+
         <section id="galeria">
             <h2>Galeria</h2>
             <div class="obrazek">
-                <!-- Tutaj jest Twój plik 22.jpg -->
-                <img src="22.jpg" alt="Uczeń programuje małego robota mBot">
-                <p>Uczeń programuje mBot</p>
+                <img src="22.jpg" alt="Uczeń programuje małego robota mBot na komputerze podczas zajęć edukacyjnych">
+                <p>Uczeń programuje mBot w środowisku Scratch</p>
             </div>
             <div class="obrazek">
-                <!-- Tutaj jest Twój plik 33.jpg -->
-                <img src="33.jpg" alt="Grupa dzieci testuje Ozobota">
-                <p>Test Ozobota w grupie</p>
+                <img src="33.jpg" alt="Grupa dzieci testuje Ozobota na kolorowej macie z kodem kreskowym w klasie">
+                <p>Test Ozobota na macie z kodami kolorów</p>
             </div>
+        </section>
+
+        <section id="podsumowanie">
+            <h2>Podsumowanie</h2>
+            <p>Robotyka edukacyjna to skuteczne narzędzie do nauczania kompetencji XXI wieku. Choć wymaga inwestycji w sprzęt i szkolenia, korzyści przewyższają koszty. Uczniowie nie tylko uczą się programowania, ale także rozwijają kreatywność, wytrwałość i umiejętność pracy zespołowej.</p>
+            <p>W przyszłości robotyka będzie odgrywać jeszcze większą rolę w edukacji – automatyzacja, sztuczna inteligencja i Internet Rzeczy stają się standardem. Dlatego warto już dziś inwestować w młode pokolenie, dając im dostęp do nowoczesnych technologii i inspirując do kariery w branży STEM.</p>
         </section>
     </main>
 
     <footer>
-        <p>Projekt Informatyka KL III &copy; 2026 | Optima School</p>
+        <p>Projekt Informatyka KL III &copy; 2026 | Autor: [TWOJE IMIĘ I NAZWISKO]</p>
+        <p>GitHub Pages | <a href="https://blankaaa118.github.io/robotyka-edukacja/" style="color: #555;">blankaaa118.github.io/robotyka-edukacja</a></p>
     </footer>
 </body>
 </html>
